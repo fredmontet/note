@@ -1,6 +1,7 @@
 Spark
 =====
 
-# Cheat sheet
+## Cheat sheet
+
 http://docs.scala-lang.org/cheatsheets/
 

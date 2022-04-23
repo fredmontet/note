@@ -1,0 +1,4 @@
+site_name: Note 
+site_url: https://note.fredmontet.com/
+theme:
+    name: readthedocs

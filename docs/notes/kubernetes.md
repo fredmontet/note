@@ -21,6 +21,10 @@ Kubernetes
 
 	kubectl get deployments <deployment-id> 
 
+## Get in the terminal of a pod
+
+	kubectl exec -it <pod-id> -- bin/bash 
+ 
 ## Concepts
 
 In Kubernetes, 3 object types exist:
@@ -28,6 +32,10 @@ In Kubernetes, 3 object types exist:
 - Deployment: makes a pod
 - Service: connect a pod to a load balanced IP
 - Ingress: connect 
+
+## Layer of Abstraction
+
+A Deployment manages a ReplicaSet which manages a Pod that is the abstraction of a container.
 
 ## Links
 

@@ -1,6 +1,27 @@
 ﻿Git
 ===
 
+## Clean your repositoryi
+
+	git clean -dfX
+
+git-clean - Remove untracked files from the working tree
+	-d for removing directories
+	-f remove forcefully
+	-n Don’t actually remove anything, just show what would be done.
+	-X Remove only files ignored by Git. This may be useful to rebuild everything from scratch, but keep manually created files.	
+
+If the ignored files are already added to the index/staging, you must remove the files from the tracking index before using the above clean command.
+
+	git rm -rf --cached .
+
+Then add the files except the ones mentioned in the .gitignore file
+
+	git add .
+
+Source : https://stackoverflow.com/questions/46273032/is-there-a-way-to-remove-all-ignored-files-from-a-local-git-working-tree
+
+
 ## Prendre des commits d'une autre branche
 
 	git cherry-pick <commit>
